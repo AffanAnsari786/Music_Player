@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/245adb080e.js" crossorigin="anonymous"></script></head>
+<body>
+
+    <div class="container">
+
+        <div class="music-player">
+            <nav class="header-icons">
+                <div class="circle">
+                    <i class="fa-solid fa-angles-down"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>  
+            </nav>
+            <img src="images/song-1.jpg" class="song-img" id="image">
+
+            <div class="song-detail">
+                <h1 id="title">Believer</h1>
+                <p id="artist">Imagine Dragons</p>
+            </div>
+
+            <audio src="music/song-1.mpeg" type="audio/mpeg" id="song"></audio>
+            <input value="0" type="range" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward" id="prev" title="Previous"></i></div>
+                <div><i class="fa-solid fa-play" id="ctrlIcon" title="Play"></i></div>
+                <div><i class="fa-solid fa-forward" id="next" title="Next"></i></div>           
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
