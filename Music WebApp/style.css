@@ -119,3 +119,77 @@
         transform: rotate(360deg);
     }
 }
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+    .music-player{
+        width: 380px;
+        border-radius: 15px;
+        padding: 20px 20px;
+    }
+    .header-icons .circle{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 40px;
+    }
+    
+.song-detail{
+    margin: 15px 0;
+}
+.song-img{
+    width: 210px;
+    height: 210px;
+}
+.music-player h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.music-player p{
+    font-size: 15px;
+    font-weight: 400;
+}
+#progress{
+    width: 95%;
+    height: 3px;
+    margin: 20px 0;
+}
+#progress::-webkit-slider-thumb{
+    width: 18px;
+    height: 18px;
+}
+.controls div{
+    width: 45px;
+    height: 45px;
+    margin: 18px 0;
+}
+
+.controls div:nth-child(2){
+    font-size: 18px;
+}
+    
+}
+
+@media screen and (max-width: 400px) {
+    .music-player{
+        width: 320px;
+        padding: 20px 15px;
+    }
+    .header-icons .circle{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        line-height: 40px;
+    }
+    
+.song-img{
+    width: 180px;
+    height: 180px;
+}
+
+.controls div{
+    width: 40px;
+    height: 40px;
+}    
+}
+
